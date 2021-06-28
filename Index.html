@@ -1,0 +1,61 @@
+<html>
+	<head>
+		<style type="text/css">
+			#Tabela{
+				border: 2px solid #0000CD	
+			}
+			th,td{
+				border: 2px solid #0000CD	
+			}
+			
+
+		</style>
+		<script type="text/javascript">
+			function Adicionar(){
+				var nome = document.getElementById('campoNome').value;
+			    var descricao = document.getElementById('campoDescricao').value;
+			    var preco = document.getElementById('campoPreco').value;
+
+				var tabela = document.getElementById('Tabela');
+				tabela.innerHTML = `${tabela.innerHTML} <tr><td>${nome}</td> <td>${descricao}</td> <td>${preco}</td>`;
+			}
+
+		</script>
+	</head>
+	<body>
+		<div>
+		produto:<input id="campoNome" placeholder="Digite aqui o produto"></input>
+		descrição:<input id="campoDescricao" placeholder="Digite aqui a descrição"></input>
+		valor:<input id="campoPreco" placeholder="Digite aqui o valor"></input>
+		<button onclick="Adicionar()">adicionar</button>
+		</div>
+		<br>
+		<div>
+		<table id="Tabela" width="100%">
+
+			<tr>
+				<th>Nome</th>
+				<th>Descrição</th>
+				<th>Preço</th>
+			</tr>
+			<tr>
+				<td>Ração</td>
+				<td>Para cachorros filhotes</td>
+				<td>R$89,99</td>
+			</tr>
+			<tr>
+				<td>Shampoo</td>
+				<td>Para gatos</td>
+				<td>R$15,50</td>
+			</tr>
+			<tr>
+				<td>Remedio</td>
+				<td>Para passarinhos</td>
+				<td>R$18,90</td>
+			</tr>
+
+		</table>
+	</div>
+
+	</body>
+</html>
