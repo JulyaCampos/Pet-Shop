@@ -1,0 +1,84 @@
+<html>
+	<head>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Newsreader:wght@800&display=swap" rel="stylesheet">
+		<style type="text/css">
+		  #caixaLogin{
+		  	height: 300px;
+		  	width: 300px;
+		  	background-color: #ADD8E6;
+		  	position: absolute;
+			top: 0; bottom: 0;
+			left: 0; right: 0;
+			margin: auto;
+			border-color: #6495ED;
+			border-style: solid;
+			border-radius: 20px;
+			border-width: 10px;
+			text-align: center 
+		  }
+		  #caixaLogin:hover{
+		  	border:thick groove #191970;
+		  }
+		  #conteudo{
+		  	position: absolute;
+			top: 0; bottom: 0;
+			left: 0; right: 0;
+			margin: auto;
+			height: 50px;
+
+		  }
+
+		  html,body{
+		  	height: 100%
+		  	margin: 0;	  
+		  	background-image: linear-gradient(to top, #0000CD,#00BFFF)
+		  }
+		  #tituloCaixaLogin{
+		  	font-family: 'Bebas Neue', cursive;
+			font-family: 'Newsreader', serif;
+			font-size: 2rem;
+		  }
+
+		  
+		
+
+		 
+
+
+		</style>	
+
+		<title>Pet Shop</title>
+		
+		<script type="text/javascript">
+			function Logar(){
+				var emailCorreto='adm';
+				var senhaCorreta='123';
+				var campoEmail = document.getElementById('campoEmail').value;
+			    var campoSenha= document.getElementById('campoSenha').value;
+
+				if(emailCorreto===campoEmail && senhaCorreta===campoSenha)
+				{
+						window.location.href='Index.html';
+				}else
+				{
+			   		alert('O seu email ou senha estão incorretos');
+				}
+				
+			}
+
+		</script>
+	</head>
+	    <body>
+	    	
+	    	<div id="caixaLogin">
+				<h3 id= "tituloCaixaLogin">Pet Shop</h3>
+	    		<div id="conteudo">
+	    		<input id="campoEmail" placeholder="Digite aqui o email"></input><br>
+	    		<input id="campoSenha" type="password" placeholder="Digite aqui a senha"></input><br>
+	    		<button onclick="Logar()" style="background-color: #87CEFA">Entrar</button>
+	    	    </div>
+	    	</div>
+	    </body>
+</html>
